@@ -6,6 +6,7 @@
         <link rel = "stylesheet" href = "css/ress.css">
         <link rel = "stylesheet" href = "css/Style.css">
         
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src = "JavaScript/Main.js"></script>
     </head>
 
@@ -15,21 +16,21 @@
             <header class = "header">
                 <div class = "inner">
                     <h1 class = "header-logo">
-                        <a href = "">ページトップ</a>
+                        <a href = "index.html">Top</a>
                     </h1>
                     <nav class = "header-nav">
                         <ul class = "header-nav-list">
-                            <li class = "header-nav-item"><a href = "#works">作品</a></li>
-                            <li class = "header-nav-item"><a href = "#skill">スキル</a></li>
-                            <li class = "header-nav-item"><a href = "#profile">自己PR</a></li>
-                            <li class = "header-nav-item"><a href = "#contact">問い合わせ先</a></li>
+                            <li class = "header-nav-item"><a href = "#works">Works</a></li>
+                            <li class = "header-nav-item"><a href = "#skill">Skill</a></li>
+                            <li class = "header-nav-item"><a href = "#profile">MyProf</a></li>
+                            <li class = "header-nav-item"><a href = "#links">Links</a></li>
                         </ul>
                     </nav>
                 </div>
             </header>
-            <!--/ヘッダー-->           
+            <!--/ヘッダー-->
             <main class = "content">
-                <!--表紙部分-->
+                <!--main-visual-->
                 <div class = "main-visual">
                     <div class = "main-visual-inner">
                         <p class = "main-visual-title">ono hikaru</p>
@@ -37,88 +38,87 @@
                         <p class = "main-visual-text">ようこそ</p>
                     </div>
                 </div>
-                <!--/表紙部分-->
-                <!--作品一覧-->
+                <!--/main-visual-->
+                <!--works-->
                 <section class = "works section" id = "works">
                     <div class = "inner">
-                        <h2 class = "title">作品一覧</h2>
+                        <h2 class = "title">Works</h2>
                         <div class = "works-list">
                             <!--作品1-->
-                            <a class = "works-item" href = "SampleWorks.html">
-                                <p class = "works-img"><img src = "Image/ball.png"></p>
-                                <p class = "works-name">作品名</p>
-                                <p class = "works-info">補足説明</p>
+                            <a class = "works-item" href = "works1.html">
+                                <p class = "works-img"><img src = "Image/works/Icon1.jpg"></p>
+                                <p class = "works-name">Lost girl and Knight</p>
+                                <p class = "works-info">1年後期のチーム制作</p>
                             </a>
                             <!--/作品1-->
                             <!--作品2-->
-                            <a class = "works-item" href = "SampleWorks.html">
-                                <p class = "works-img"><img src = "Image/ball.png"></p>
-                                <p class = "works-name">作品名</p>
-                                <p class = "works-info">補足説明</p>
+                            <a class = "works-item" href = "works2.html">
+                                <p class = "works-img"><img src = "Image/works/Icon2.jpg"></p>
+                                <p class = "works-name">ループバレット</p>
+                                <p class = "works-info">2年前期のチーム制作</p>
                             </a>
                             <!--/作品2-->
-                            <!--作品3-->
-                            <a class = "works-item" href = "SampleWorks.html">
-                                <p class = "works-img"><img src = "Image/ball.png"></p>
-                                <p class = "works-name">作品名</p>
-                                <p class = "works-info">補足説明</p>
-                            </a>
-                            <!--/作品3-->
                         </div>
                     </div>
                 </section>
-                <!--/作品一覧-->
-                <!--スキル一覧-->
+                <!--/works-->
+                <!--skill-->
                 <section class = "skill section" id = "skill">
                     <div class = "inner">
-                        <h2 class = "title">スキル</h2>
+                        <h2 class = "title">Skill</h2>
                         <div class = "skill-list">
                             <!--スキル1-->
                             <div class = "skill-item">
-                                <p class = "skill-img"><img src = "Image/ball.png"></p>
+                                <p class = "skill-img"><img src = "Image/skill/Icon_c.png"></p>
                                 <div class = "skill-body">
-                                    <h3 class = "skill-name">スキル名</h3>
-                                    <p class = "skill-text">補足説明</p>
+                                    <h3 class = "skill-name">C言語</h3>
+                                    <p class = "skill-text"></p>
                                 </div>
                             </div>
                             <!--スキル1-->
                             <!--スキル2-->
                             <div class = "skill-item">
-                                <p class = "skill-img"><img src = "Image/ball.png"></p>
+                                <p class = "skill-img"><img src = "Image/skill/Icon_c++.png"></p>
                                 <div class = "skill-body">
-                                    <h3 class = "skill-name">スキル名</h3>
-                                    <p class = "skill-text">補足説明</p>
+                                    <h3 class = "skill-name">C++言語</h3>
+                                    <p class = "skill-text">
+                                        お勉強中
+                                    </p>
                                 </div>
                             </div>
                             <!--スキル2-->
                             <!--スキル3-->
                             <div class = "skill-item">
-                                <p class = "skill-img"><img src = "Image/ball.png"></p>
+                                <p class = "skill-img"><img src = "Image/skill/Icon_github.png"></p>
                                 <div class = "skill-body">
-                                    <h3 class = "skill-name">スキル名</h3>
-                                    <p class = "skill-text">補足説明</p>
+                                    <h3 class = "skill-name">GitHub</h3>
+                                    <p class = "skill-text">
+                                        授業で使ったり<br>
+                                        チーム制作で使ったり。<br>
+                                        何かしらのレポートとかも。
+                                    </p>
                                 </div>
                             </div>
                             <!--スキル3-->
                             <!--スキル4-->
                             <div class = "skill-item">
-                                <p class = "skill-img"><img src = "Image/ball.png"></p>
+                                <p class = "skill-img"><img src = "Image/skill/slack_logo.png"></p>
                                 <div class = "skill-body">
-                                    <h3 class = "skill-name">スキル名</h3>
-                                    <p class = "skill-text">補足説明</p>
+                                    <h3 class = "skill-name">Slack</h3>
+                                    <p class = "skill-text">プログラムの連絡用によく使ってます。</p>
                                 </div>
                             </div>
                             <!--スキル4-->
                         </div>
                     </div>
                 </section>
-                <!--/スキル一覧-->
-                <!--自己PR-->
-                <section class = "about section" id = "profile">
+                <!--/skill-->
+                <!--profile-->
+                <section class = "profile section" id = "profile">
                     <div class = "inner">
-                        <h2 class = "title">自己PR</h2>
+                        <h2 class = "title">MyProfile</h2>
                         <div class = "profile">
-                            <p class = "profile-img"><img src = "Image/ball.png"></p>
+                            <p class = "profile-img"><img src = "Image/profile/Icon.png"></p>
                             <div class = "profile-body">
                                 <p>
                                     8月1日生まれ<br>
@@ -142,18 +142,19 @@
                         </div>
                     </div>
                 </section>
-                <!--/自己PR-->
-                <!--問い合わせ-->
-                <section class = "contact section" id = "contact">
+                <!--/profile-->
+                <!--links-->
+                <section class = "links section" id = "links">
                     <div class = "inner">
-                        <h2 class = "title">お問い合わせ</h2>
-                        <p class = "lead">お問い合わせ先</p>
-                        <div class = "contact-list">
-                            <span class = "contact-item">Onohikaru0801@gmail.com</span>
+                        <h2 class = "title">Links</h2>
+                        <div class = "links-list">
+                            <a class = "links-item" href = "https://github.com/ono-hikaru81?tab=repositories">
+                                <img src = "Image/skill/Icon_github.png"> GitHub
+                            </a>
                         </div>
                     </div>
                 </section>
-                <!--/問い合わせ-->
+                <!--/links-->
             </main>
         </div>
     </body>

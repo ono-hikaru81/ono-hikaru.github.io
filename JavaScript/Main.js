@@ -3,21 +3,13 @@ $(function()
     // ページ内スクロール
     var navHeight = $(".header").outerHeight();
 
-    $('a[href^="#"].').on("click", function()
+    $('a[href^="#"]').on("click", function()
     {
-        var href = $(this).after("href");
+        var href = $(this).attr("href");
         var target = $(href == "#" || href == "" ? "html" : href);
-        var positon = target.offset().top - navHeight;
+        var position = target.offset().top - navHeight;
 
-        $("html, body").animation({scrollTop : positon,}, 300, "swing");
-
-        return false;
-    });
-
-    // ページトップ
-    $("#js-page-top").on("click", function()
-    {
-        $("body, html").animation({scrollTop : 0,}, 300);
+        $("html, body").animate({scrollTop : position,}, 300, "swing");
 
         return false;
     });
